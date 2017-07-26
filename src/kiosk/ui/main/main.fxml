@@ -1,0 +1,1342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<AnchorPane prefHeight="690.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kiosk.ui.main.MainController">
+   <children>
+      <HBox layoutX="-14.0" layoutY="328.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTabPane prefHeight="690.0" prefWidth="576.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="Burgers">
+                     <content>
+                        <VBox prefHeight="690.0" prefWidth="519.0">
+                           <children>
+                              <HBox prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="burger001img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/burgers/Big-Mac.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin></ImageView>
+                                          <Label alignment="CENTER" prefHeight="44.0" text="Big Mac">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="burger001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic></JFXButton>
+                                                <Label fx:id="burger001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="burger001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic></JFXButton>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="burger002img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/burgers/McDouble.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="McDouble" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="burger002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="burger002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="burger002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="burger003img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/burgers/Double-Quarter-Pounder-with-Cheese.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Double Quarter Pounder with Cheese" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="burger003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="burger003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="burger003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="60.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="burger004img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/burgers/Quarter-Pounder-with-Cheese.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Quarter Pounder with Cheese" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="burger004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="burger004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="burger004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="214.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="burger005img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/burgers/Double-Cheeseburger.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Double Cheeseburger" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="burger005remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="burger005count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="burger005add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="burger006img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/burgers/Cheeseburger.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Cheeseburger" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="burger006remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="burger006count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="burger006add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+                  <Tab text="Salads">
+                     <content>
+                        <VBox prefHeight="690.0" prefWidth="519.0">
+                           <children>
+                              <HBox prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="salad001img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/salads/Bacon-Ranch-Salad-with-Buttermilk-Crispy-Chicken.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" prefHeight="44.0" text="Bacon Ranch Salad with Buttermilk Crispy Chicken" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="salad001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="salad001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="salad001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="salad002img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/salads/Bacon-Ranch-Salad-with-Grilled-Chicken.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Bacon Ranch Salad with Grilled Chicken" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="salad002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="salad002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="salad002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="salad003img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/salads/Side-Salad.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Side Salad" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="salad003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="salad003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="salad003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="60.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="salad004img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/salads/Southwest-Salad-with-Buttermilk-Crispy-Chicken.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Southwest Salad with Buttermilk Crispy Chicken" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="salad004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="salad004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="salad004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="214.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="salad005img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/salads/Southwest-Salad-with-Grilled-Chicken.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Southwest Salad with Grilled Chicken" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="salad005remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="salad005count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="salad005add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+                  <Tab text="Sides">
+                     <content>
+                        <VBox prefHeight="690.0" prefWidth="519.0">
+                           <children>
+                              <HBox prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="side001img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/sides/Apple-Slices.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" prefHeight="44.0" text="Apple Slices">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="side001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="side001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="side001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="side002img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/sides/Cuties.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Cuties" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="side002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="side002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="side002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="side003img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/sides/Fries-Small-Medium.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="French Fries" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="side003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="side003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="side003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="60.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="side004img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/sides/Fruit-n-Yogurt-Parfait.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Fruit n Yogurt Parfait" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="side004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="side004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="side004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="214.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="side005img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/sides/Go-GURT-Strawberry-Flavored-Low-Fat-Yogurt-Tube.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Go GURT Strawberry Yogurt Tube" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="side005remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="side005count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="side005add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+                  <Tab text="Desserts">
+                     <content>
+                        <VBox prefHeight="690.0" prefWidth="519.0">
+                           <children>
+                              <HBox prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="dessert001img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/desserts/Baked-Hot-Apple-Pie.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" prefHeight="44.0" text="Baked Hot Apple Pie">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="dessert001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="dessert001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="dessert001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="dessert002img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/desserts/Chocolate-Chip-Cookie.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Chocolate Chip Cookie" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="dessert002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="dessert002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="dessert002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="dessert003img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/desserts/McFlurry-with-OREO-Cookies-12floz-cup.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="McFlurry with OREO Cookies" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="dessert003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="dessert003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="dessert003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="60.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="dessert004img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/desserts/Strawberry-Sundae.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Strawberry Sundae" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="dessert004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="dessert004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="dessert004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="214.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="dessert005img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/desserts/Vanilla-Reduced-Fat-Ice-Cream-Cone.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Vanilla Ice Cream Cone" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="dessert005remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="dessert005count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="dessert005add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="dessert006img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/desserts/Vanilla-McCafe-Shake-Medium.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Vanilla McCafe Shake" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="dessert006remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="dessert006count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="dessert006add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+                  <Tab text="Drinks">
+                     <content>
+                        <VBox prefHeight="690.0" prefWidth="519.0">
+                           <children>
+                              <HBox prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="drink001img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/drinks/Coca-Cola-Classic-Small.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" prefHeight="44.0" text="Coca Cola">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="drink001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="drink001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="drink001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="drink002img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/drinks/Coffee-Medium.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Coffee" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="drink002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="drink002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="drink002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <ImageView fx:id="drink003img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/drinks/Dasani-Water.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Dasani Water" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="drink003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="drink003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="drink003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="60.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="drink004img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/drinks/McCafe-Mocha-Medium.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="McCafe Mocha" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="drink004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="drink004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="drink004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="10.0" layoutY="214.0" prefHeight="230.0" prefWidth="200.0" spacing="40.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="drink005img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/drinks/Minute-Maid-Apple-Juice-Box.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Apple Juice" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="drink005remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="drink005count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="drink005add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fx:id="drink006img" fitHeight="130.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/drinks/Sprite-Small.jpeg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Sprite" textAlignment="CENTER" wrapText="true">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton fx:id="drink006remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/remove.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <Label fx:id="drink006count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+                                                <JFXButton fx:id="drink006add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0" text="&gt;">
+                                                   <graphic>
+                                                      <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/icons/add.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+            <VBox prefHeight="600.0" prefWidth="318.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="318.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="15.0" style="-fx-font-size: 1.5em; -fx-font-weight: bold; -fx-font-family: sans-serif;" text="My Order">
+                           <HBox.margin>
+                              <Insets left="110.0" />
+                           </HBox.margin></Label>
+                        <JFXButton fx:id="adminButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#loadOrderTableView">
+                           <HBox.margin>
+                              <Insets left="85.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/settings.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children></HBox>
+                  <JFXListView fx:id="myOrder" prefHeight="570.0" prefWidth="318.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                     </VBox.margin></JFXListView>
+                  <HBox prefHeight="62.0" prefWidth="318.0" spacing="5.0">
+                     <children>
+                        <JFXButton fx:id="cancelOrder" buttonType="RAISED" onAction="#loadCancelOrderOp" prefHeight="62.0" prefWidth="155.0" style="-fx-background-color: #e53935;" stylesheets="@main.css" text="CANCEL ORDER" />
+                        <JFXButton fx:id="done" buttonType="RAISED" onAction="#loadDoneOp" prefHeight="67.0" prefWidth="155.0" style="-fx-background-color: #388E3C;" stylesheets="@main.css" text="DONE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

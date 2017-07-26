@@ -1,0 +1,43 @@
+AnchorPane {
+    -fx-font-family: sans-serif;
+}
+#done,
+#cancelOrder {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+HBox,
+VBox {
+    -fx-background-color: white;
+}
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: #e53935;
+}
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #e53935;
+}
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #75bc1b;
+    -fx-stroke-width: 3pt;
+}
+
+.jfx-tab-pane .button {
+    -fx-border-radius: 50;
+    -fx-background-color: lightgray;
+    -fx-background-radius: 50;
+    -fx-background-insets: 0;
+}
+
+.jfx-tab-pane .button:hover {
+    -fx-background-color: gray;
+}
+
+.jfx-tab-pane HBox > .label {
+    -fx-font-size: 1.5em;
+}
+
+.list-view {
+    -fx-font-family: monospace;
+}

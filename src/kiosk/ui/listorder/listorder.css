@@ -1,0 +1,16 @@
+AnchorPane {
+    -fx-font-family: sans-serif;
+}
+
+.jfx-tab-pane .headers-region {
+    -fx-background-color: #5E35B1;
+}
+
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #5E35B1;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #75bc1b;
+    -fx-stroke-width: 3pt;
+}

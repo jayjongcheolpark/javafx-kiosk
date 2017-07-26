@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Jul 24 14:12:01 EDT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015d-75cc-7b64-00000e7ef3d0 
+on database directory /Users/gogolearn/OneDrive/Java/java2finalproj/database with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/Users/gogolearn/OneDrive/Java/db-derby-10.13.1.1-lib/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_152-ea-b02
+user.dir=/Users/gogolearn/OneDrive/Java/java2finalproj
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.12.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

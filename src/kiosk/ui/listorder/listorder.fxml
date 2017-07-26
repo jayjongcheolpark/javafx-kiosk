@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="460.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kiosk.ui.listorder.ListOrderController">
+   <children>
+      <JFXTabPane prefHeight="460.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Order Table">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="orderTable" prefHeight="427.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="idCol" prefWidth="51.0" text="ID" />
+                            <TableColumn fx:id="orderIDCol" prefWidth="126.0" text="ORDER ID" />
+                              <TableColumn fx:id="nameCol" prefWidth="317.0" text="ITEM" />
+                              <TableColumn fx:id="priceCol" prefWidth="82.0" text="PRICE" />
+                              <TableColumn fx:id="countCol" prefWidth="53.0" text="QTY" />
+                              <TableColumn fx:id="timeCol" prefWidth="170.0" text="TIME" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Pie Chart">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="pieChart" layoutX="117.0" layoutY="15.0" prefHeight="430.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Sales Line Chart">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="800.0" spacing="20.0">
+                           <children>
+                              <JFXButton fx:id="loadChart" buttonType="RAISED" onAction="#loadLineChart" ripplerFill="#f80606" style="-fx-background-color: white;" text="Load Chart" />
+                           </children>
+                        </HBox>
+                        <LineChart fx:id="lineChart" axisSortingPolicy="NONE" layoutY="46.0" prefHeight="367.0" prefWidth="800.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="46.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>
